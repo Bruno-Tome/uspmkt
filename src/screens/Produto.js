@@ -22,6 +22,8 @@ class Produto extends React.Component {
             width: 100,
              height: 100,
             padding: 20 }
+            ,
+        
      }
     render() {
         return (

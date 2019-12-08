@@ -11,7 +11,7 @@ class Carrinho extends React.Component {
     }
     static navigationOptions = {
         title: 'Carrinho',
-        tabBarIcon: <Ionicons name ={'ios-cart'}/>
+        tabBarIcon: <Ionicons name ={'ios-basket'} size = {20}/>
     };
     state = {  }
     render() {

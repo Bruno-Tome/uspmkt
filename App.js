@@ -10,7 +10,7 @@ const MainNavigator = createBottomTabNavigator({
   Carrinho: {screen: Carrinho}
   },{
   tabBarOptions: {
-    activeTintColor: 'red',
+    activeTintColor: '#0095AD',
     inactiveTintColor: 'gray'
   }
 

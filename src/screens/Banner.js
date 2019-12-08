@@ -5,7 +5,8 @@ import { withNavigation } from 'react-navigation';
 
 class Banner extends React.Component {
     state = { 
-        imagesrc: "image-url"
+        
+        imagesrc: this.props.image
         ,
         
 
@@ -17,8 +18,8 @@ class Banner extends React.Component {
     render() {
         return (
             <TouchableOpacity onPress={this.navigator}>
-                <View>
-                <Image source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'}} style={{ width: 100, height: 100 }} />
+                <View height = {150}  width = {150}>
+                <Image source={this.state.imagesrc} style={{ width: 150, height: 150 }} resizeMode ='contain' />
              </View>
             </TouchableOpacity>
             
