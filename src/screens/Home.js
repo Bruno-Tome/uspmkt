@@ -49,7 +49,7 @@ class HomeScreen extends React.Component {
 
               <ScrollView style={{ 
                   flex: 1,
-                  alignContent: 'top',
+                  
                   flexDirection: 'column',
                   padding:20
                   }}> 

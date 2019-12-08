@@ -18,7 +18,7 @@ class Banner2 extends React.Component {
         return (
             <TouchableOpacity onPress={this.navigator}>
                 <View style ={{width: 100, height: 100}}>
-                <Text textSize= {20 }>{this.props.text}</Text>
+                <Text textsize= {20 }>{this.props.text}</Text>
              </View>
             </TouchableOpacity>
             

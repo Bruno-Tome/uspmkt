@@ -10,18 +10,18 @@ class Produto extends React.Component {
         dispatch(ADD_TO_CART(this))
         console.log(store.getState())
     }
+     str = this.props.image
     state = { 
-        productName: 'nome',
-        loja: 'SAMECA',
-        preco: '100',
-        image:{
-             uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg',
-             style: {
-                  width: 100,
-                   height: 100,
-                  padding: 20 }
-             
-        }
+        productName: this.props.productName,
+        loja: this.props.loja ,
+        preco: this.props.preco,
+        image: this.props.image
+     }
+    estilo ={
+        style: {
+            width: 100,
+             height: 100,
+            padding: 20 }
      }
     render() {
         return (
@@ -30,7 +30,7 @@ class Produto extends React.Component {
                 <Text>
                     {this.state.productName}
                 </Text>
-                <Image source={{uri: this.state.image.uri}} style={this.state.image.style}/>
+                <Image source={this.str} style={this.estilo.style}/>
 
                 <Text>
                     {this.state.loja}
