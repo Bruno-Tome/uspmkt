@@ -25,9 +25,7 @@ class Produto extends React.Component {
      }
     render() {
         return (
-            <TouchableOpacity onpress = {() => this.addToCart 
-                
-                } >
+            <TouchableOpacity onpress = {() => this.addToCart  } >
             <View>
                 <Text>
                     {this.state.productName}

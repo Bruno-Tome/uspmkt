@@ -16,9 +16,6 @@ const MainNavigator = createBottomTabNavigator({
 
 }
   
-  
-  
-  
   );
 
   

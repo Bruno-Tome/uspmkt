@@ -1,9 +1,9 @@
 import React from 'react';
-import { Image, View } from "react-native";
+import { Text, View } from "react-native";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { withNavigation } from 'react-navigation';
 
-class Banner extends React.Component {
+class Banner2 extends React.Component {
     state = { 
         imagesrc: "image-url"
         ,
@@ -17,8 +17,8 @@ class Banner extends React.Component {
     render() {
         return (
             <TouchableOpacity onPress={this.navigator}>
-                <View>
-                <Image source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'}} style={{ width: 100, height: 100 }} />
+                <View style ={{width: 100, height: 100}}>
+                <Text textSize= {20 }>{this.props.text}</Text>
              </View>
             </TouchableOpacity>
             
@@ -27,5 +27,5 @@ class Banner extends React.Component {
     }
 }
 
-export default withNavigation(Banner);
+export default withNavigation(Banner2);
 
