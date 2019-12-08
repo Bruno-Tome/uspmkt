@@ -5,11 +5,7 @@ import { withNavigation } from 'react-navigation';
 
 class Banner2 extends React.Component {
     state = { 
-        imagesrc: "image-url"
-        ,
-        
-
-
+        imagesrc: "image-url",
      }
      navigator = () => {
         this.props.navigation.navigate('Loja', {})

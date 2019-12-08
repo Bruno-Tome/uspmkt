@@ -1,7 +1,3 @@
-
-
-
-
 export function addToCart(Produto){
     return{type: ADD_TO_CART, Produto}
 }

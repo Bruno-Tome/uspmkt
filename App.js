@@ -1,5 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import './src/config/StatusBarConfig';
 import Carrinho from './src/screens/Carrinho';
 import Home from './src/screens/Home';
 import Loja from './src/screens/Loja';
