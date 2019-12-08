@@ -6,20 +6,25 @@ import Home from './src/screens/Home';
 import Loja from './src/screens/Loja';
 
 const MainNavigator = createBottomTabNavigator({
-  Home: {screen: Home},
-  Loja: {screen: Loja},
-  Carrinho: {screen: Carrinho}
-  },{
+  Home: { screen: Home },
+  Loja: { screen: Loja },
+  Carrinho: { screen: Carrinho }
+}, {
   tabBarOptions: {
     activeTintColor: 'red',
-    inactiveTintColor: 'gray'
+    inactiveTintColor: 'gray',
+  },
+  navigationOptions: {
+    headerStyle: {
+      backgroundColor: '#DA552F'
+    },
+    headerTintColor: '#FFF',
   }
-
 }
-  
-  );
 
-  
+);
+
+
 
 const App = createAppContainer(MainNavigator);
 

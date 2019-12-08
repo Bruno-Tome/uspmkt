@@ -60,7 +60,8 @@ class Profile extends Component {
 
             <TouchableOpacity
                 style={styles.productButton}
-                onPress={{}}>
+                // onPress={{}}
+                >
                 <Text style={styles.productButtonText}>Ver mais detalhes</Text>
             </TouchableOpacity>
         </View>

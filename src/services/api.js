@@ -5,3 +5,24 @@ const api = axios.create({
 });
 
 export default api;
+
+/*
+
+GET:
+
+base_url/products       =>  retorna todos os produtos
+base_url/products/:id   =>  retorna o produto com o id especificado
+
+POST:
+
+base_url/products       =>  adiciona produto
+
+PUT:
+
+base_url/products/:id   => atualiza produto
+
+DELETE:
+
+base_url/products/:id   => deleta produto
+
+*/
