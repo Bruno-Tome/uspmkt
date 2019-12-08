@@ -19,7 +19,7 @@ class Banner extends React.Component {
         return (
             <TouchableOpacity onPress={this.navigator}>
                 <View height = {150}  width = {150}>
-                <Image source={this.state.imagesrc} style={this.props.style} resizeMode ='contain' />
+                <Image source={this.state.imagesrc} style={this.props.style} resizeMode ='stretch' />
              </View>
             </TouchableOpacity>
             

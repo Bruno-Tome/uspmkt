@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     },
 
     list: {
-        padding: 20,
+        padding: 10,
     },
 
     imageLoja: {
@@ -179,14 +179,14 @@ const styles = StyleSheet.create({
 
     productContainer: {
         backgroundColor: '#fff',
-        width: 150,
+        width: 120,
         alignContent: 'flex-end',
         alignItems: 'center',
         borderWidth: 1,
         borderColor: '#DDD',
         borderRadius: 5,
         padding: 20,
-        marginRight: 20,
+        margin: 5,
         
     },
 
@@ -205,8 +205,8 @@ const styles = StyleSheet.create({
     },
 
     productButton: {
-        height: 42,
-        padding: 10,
+        height: 32,
+        padding: 5,
         borderRadius: 5,
         borderWidth: 2,
         borderColor: '#DA552F',

@@ -60,7 +60,7 @@ class HomeScreen extends React.Component {
                   flexDirection: 'column',
                   padding:20
                   }}> 
-                  <View><Banner image={require('./assets/extras/bannercaaso.png')} style = {{ width: 400, height: 200 }}/>
+                  <View><Banner image={require('./assets/extras/bannercaaso.png')} style = {{ width: 500, height: 200 }}/>
                
                </View>
                 <View style = {{flex:1, flexDirection: 'row', justifyContent:'space-between', alignContent:"center", padding: 5, margin:5}}>
