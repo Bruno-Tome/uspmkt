@@ -4,26 +4,26 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { withNavigation } from 'react-navigation';
 
 class Banner extends React.Component {
-    state = { 
-        
+    state = {
+
         imagesrc: this.props.image
         ,
-        
 
 
-     }
-     navigator = () => {
+
+    }
+    navigator = () => {
         this.props.navigation.navigate('Loja', {})
     }
     render() {
         return (
             <TouchableOpacity onPress={this.navigator}>
-                <View height = {150}  width = {150}>
-                <Image source={this.state.imagesrc} style={{ width: 150, height: 150 }} resizeMode ='contain' />
-             </View>
+                <View height={150} width={150}>
+                    <Image source={this.state.imagesrc} style={{ width: 150, height: 150 }} resizeMode='contain' />
+                </View>
             </TouchableOpacity>
-            
-            
+
+
         );
     }
 }

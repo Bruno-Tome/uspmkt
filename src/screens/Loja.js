@@ -59,7 +59,8 @@ class Profile extends Component {
 
             <TouchableOpacity
                 style={styles.productButton}
-                onPress={{}}>
+                // onPress={{}}
+                >
                 <Text style={styles.productButtonText}>Ver mais detalhes</Text>
             </TouchableOpacity>
         </View>
@@ -94,23 +95,6 @@ class Profile extends Component {
                     />
                 </View>
             </View>
-            
-            
-
-            // <View >
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            //     <Produto />
-            // </View>
         );
     }
 }
@@ -120,7 +104,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection:'row',
         backgroundColor: '#fafafa',
-        flexWrap:'true',
+        flexWrap: 'wrap',
         flexBasis: 0,
     },
 
@@ -160,17 +144,6 @@ const styles = StyleSheet.create({
         },
         shadowColor: '#000000',
     },
-
-    // list: {
-    //     marginHorizontal: 20,
-    //     marginTop: 20,
-    //     flex: 1,
-    //     flexDirection: 'row',
-    //     alignItems: 'center',
-    //     justifyContent: 'center',
-    //     justifyContent: "space-between",
-    //     flexWrap: 'wrap'
-    // },
 
     productContainer: {
         backgroundColor: '#FFF',
