@@ -1,18 +1,8 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, Text, View } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-class Profile extends React.Component {
-    static navigationOptions = {
-        title: 'Loja',
-        tabBarIcon: <Ionicons name ={'ios-cart'} size ={20}/>
-    };
- render() {
- return (
-    this.gridRender()
-);
-}
+import Produto from './Produto';
 
-gridRender() {
+function gridRender() {
   return <SafeAreaView style={{ flex: 1 }}>
     <View style={{
       flex: 1,
@@ -52,6 +42,5 @@ gridRender() {
     </View>
 
   </SafeAreaView>;
-  }
 }
-export default Profile;
+export default gridRender;

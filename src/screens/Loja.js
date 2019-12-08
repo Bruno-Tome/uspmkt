@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import api from '../services/api';
 class Profile extends Component {
@@ -68,9 +69,9 @@ class Profile extends Component {
     //renderizar componente
     render() {
         return (
-            
-                <View style={styles.container}>
-                <View>
+            <SafeAreaView>
+                <View style={styles.container,{flexDirection:"column"}}>
+                <View backgroundColor = "#009292">
                     <Image
                         style={styles.imageLoja}
                         source={{ uri: 'https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/10442932_848664681813956_9053845739487078614_n.jpg?_nc_cat=105&_nc_ohc=IgvGbNq98PEAQkBZC3LlF4atXc9OLrooQmGUneGvK9FXIKw5OKK4lygHA&_nc_ht=scontent-mxp1-1.xx&oh=cc91a014ebee0e55ef83d044e69103c9&oe=5E3F4CEF' }}>
@@ -94,6 +95,9 @@ class Profile extends Component {
                     />
                 </View>
             </View>
+            </SafeAreaView>
+            
+               
             
             
 
@@ -120,12 +124,12 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection:'row',
         backgroundColor: '#fafafa',
-        flexWrap:'true',
+        flexWrap:'wrap',
         flexBasis: 0,
     },
 
     listHeader: {
-        marginTop: 20,
+        marginTop: 200,
     },
 
     list: {
@@ -140,10 +144,11 @@ const styles = StyleSheet.create({
 
     textLoja: {
         position: 'absolute',
-        width: 288,
-        height: 41,
+        width: 150,
+        height: 31,
         left: 16,
         top: 136,
+        backgroundColor:"#0095AD",
 
         //TODO: implementar fonte
         // fontFamily: 'montserrat',
@@ -173,8 +178,8 @@ const styles = StyleSheet.create({
     // },
 
     productContainer: {
-        backgroundColor: '#FFF',
-        width: 240,
+        backgroundColor: '#fff',
+        width: 150,
         alignContent: 'flex-end',
         alignItems: 'center',
         borderWidth: 1,
@@ -182,6 +187,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         padding: 20,
         marginRight: 20,
+        
     },
 
     productName: {
@@ -217,6 +223,7 @@ const styles = StyleSheet.create({
     },
 
     imageProduct: {
+        backgroundColor: 'black',
         width: 120,
         height: 200,
         borderRadius: 8

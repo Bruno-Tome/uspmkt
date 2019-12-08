@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
    flexDirection:'row'
   },
   view:{
+    flex:1,
     width: 150, 
     height: 150
     
@@ -55,16 +56,19 @@ class HomeScreen extends React.Component {
 
               <ScrollView style={{ 
                   flex: 1,
-                  
+
                   flexDirection: 'column',
                   padding:20
                   }}> 
+                  <View><Banner image={require('./assets/extras/bannercaaso.png')} style = {{ width: 400, height: 200 }}/>
+               
+               </View>
                 <View style = {{flex:1, flexDirection: 'row', justifyContent:'space-between', alignContent:"center", padding: 5, margin:5}}>
                   <View style = {styles.view}>
-                   <Banner image={require('./assets/extras/atletica-caaso.jpg')}></Banner> 
+                   <Banner image={require('./assets/extras/atletica-caaso.jpg')}style = {{ width: 150, height: 150 }}></Banner> 
                   </View>
                  <View style = {styles.view}>
-                    <Banner image={require('./assets/extras/sameca.png')}></Banner>
+                    <Banner image={require('./assets/extras/sameca.png')}style = {{ width: 150, height: 150 }}></Banner>
                  </View>
 
                 
@@ -75,20 +79,24 @@ class HomeScreen extends React.Component {
                    <Banner2 text = {'Escolha\n\n sua\n\n loja'}></Banner2>
                 </View>
                 <View style = {styles.view}>
-                 <Banner image={require('./assets/extras/producao.jpeg')}></Banner>
+                 <Banner image={require('./assets/extras/producao.jpeg')} style = {{ width: 150, height: 150 }}></Banner>
                 </View>
+                
                 
                 </View>
                 <View style = {{flex:1, flexDirection: 'row', justifyContent:'space-between', alignContent:"center", padding: 5, margin:5}}>
                   <View style = {styles.view}>
-                   <Banner image={require('./assets/extras/saecomp.jpeg')}></Banner> 
+                   <Banner image={require('./assets/extras/saecomp.jpeg')}style = {{ width: 150, height: 150 }}></Banner> 
                   </View>
                  <View style = {styles.view}>
-                    <Banner image={require('./assets/extras/sacivil.png')}></Banner>
+                    <Banner image={require('./assets/extras/sacivil.png')}style = {{ width: 150, height: 150 }}></Banner>
                  </View>
-
-                
+                 
+               
                 </View>
+                <View><Banner image={require('./assets/extras/tuscabanner.png')} style = {{ width: 500, height: 200 }}/>
+               
+               </View>
               </ScrollView> 
                 
             </View>

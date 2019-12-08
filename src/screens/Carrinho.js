@@ -1,8 +1,7 @@
 
 import React from 'react';
-import { Text, View } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import gridRender from './gridRender';
 
 
 class Carrinho extends React.Component {
@@ -16,13 +15,8 @@ class Carrinho extends React.Component {
     state = {  }
     render() {
         return (
-            <View style={{ 
-                flex: 1,
-                alignItems:'center',
-                justifyContent:'center'
-                }}>
-                    <Text>Olá carrinho</Text>
-                    </View>
+            gridRender()
+            
             
                 
             
